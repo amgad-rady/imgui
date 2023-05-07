@@ -23,6 +23,7 @@ project "ImGui"
     filter "system:windows"
         systemversion "latest"
         cppdialect "C++20"
+        defines { "IMGUI_API=__declspec(dllexport)" }
         staticruntime "On"
 
     filter { "system:windows", "configurations:Release" }
